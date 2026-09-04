@@ -1,0 +1,33 @@
+# Build outputs
+build/
+bin/
+lib/
+*.o
+*.a
+*.so
+*.dylib
+
+# CMake configuration files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Qt generated files
+*_autogen/
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Neovim / C++ Tools
+.clangd/
+.cache/
+*.swp
+*.swo
+*~
+
+# Others
+.DS_Store
+*.log
