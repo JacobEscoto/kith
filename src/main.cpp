@@ -8,7 +8,6 @@ int main(int argc, char *argv[]) {
   QApplication app(argc, argv);
   QApplication::setQuitOnLastWindowClosed(false);
   QApplication::setApplicationName("kith");
-  QApplication::setOrganizationName("kith");
 
   try {
     CalendarWidget calendar;
@@ -18,10 +17,10 @@ int main(int argc, char *argv[]) {
 
     return QApplication::exec();
   } catch (const std::exception &ex) {
-    qCritical();
+    qCritical() << "unhandled exception, securely closed:" << ex.what();
     return 1;
   } catch (...) {
-    qCritical();
+    qCritical() << "unhandled exception, securely closed.";
     return 1;
   }
 }
