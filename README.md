@@ -2,9 +2,9 @@
 
 <p align="center">
   <img src="assets/kith_128.png" width="128" alt="Kith Logo">
-</p>
 
-A fully customizable desktop calendar widget for Linux. Written in C++ with Qt Widgets.
+  <p align="center">A fully customizable desktop calendar widget for Linux. Written in C++ with Qt Widgets.</p>
+</p>
 
 ## Installation
 
@@ -18,28 +18,25 @@ A fully customizable desktop calendar widget for Linux. Written in C++ with Qt W
 ### Build from Source
 
 ```bash
-git clone https://github.com/JacobEscoto.kith.git
+git clone https://github.com/JacobEscoto/kith.git
 cd kith
 
 cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
 cmake --build build
-```
 
-**NOTE:** If you don't have installed `ninja`, remove `-G Ninja`.
-
-If you want to install it at `/usr/local/bin` use:
-
-```bash
+# If you want to install it at `/usr/local/bin`, use:
 sudo cmake --install build
 ```
+
+**NOTE:** If you don't have `ninja` installed, remove `-G Ninja`.
 
 ### Run Kith
 
 ```bash
-# Run it manually using the build generated binary
+# Run it manually using the build-generated binary
 ./build/kith
 
-# If already installed run:
+# If already installed, run:
 kith &
 ```
 
@@ -47,11 +44,11 @@ kith &
 
 Kith is fully customizable using QSS. Edit `~/.config/kith/style.qss` and launch again to see the changes.
 
-### Available selectors:
+### Available selectors
 
 | Selector                      | Description                                   |
 |-------------------------------|-----------------------------------------------|
-| `#container`                  | General panel background, and rounded borders |
+| `#container`                  | General panel background and rounded borders  |
 | `#monthYearLabel`             | "Year Month" top label                        |
 | `#divider`                    | Divisory line between panels                  |
 | `#bottomPanel`                | Day cells container                           |
