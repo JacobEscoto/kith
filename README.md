@@ -1,19 +1,34 @@
 # Kith
 
 <p align="center">
-  <img src="assets/kith_128.png" width="128" alt="Kith Logo">
-
-  <p align="center">A fully customizable desktop calendar widget for Linux. Written in C++ with Qt Widgets.</p>
+  <img src="assets/kith_128.png" width="128" alt="Kith Logo"><br>
+  <strong>A fully customizable desktop calendar widget for Linux. Written in C++ with Qt Widgets.</strong>
 </p>
 
+---
+
 ## Installation
+
+> [!NOTE]
+> Before installing the widget, please choose one of the available installation methods, which are listed below:
+> - [Quick automated installation](#quick-install-script)
+> - [Build manually](#build-from-source)
 
 ### Dependencies
 - `build-essential`
 - `cmake`
-- `ninja-build`
 - `qt6-base-dev`
 - `qt6-base-dev-tools`
+- `ninja-build` (Optional)
+
+### Quick Install Script
+```bash
+# Interactive installation
+./install.sh
+
+# Non-interactive installation
+./install.sh -y
+```
 
 ### Build from Source
 
@@ -24,7 +39,7 @@ cd kith
 cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
 cmake --build build
 
-# If you want to install it at `/usr/local/bin`, use:
+# Optional: Install system-wide to /usr/local/bin
 sudo cmake --install build
 ```
 
@@ -58,4 +73,4 @@ Kith is fully customizable using QSS. Edit `~/.config/kith/style.qss` and launch
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit)
+Distributed under the [MIT License](https://choosealicense.com/licenses/mit).
