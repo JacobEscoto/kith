@@ -5,5 +5,5 @@ Comment=Kith (Desktop Calendar Widget)
 Exec=/usr/local/bin/kith
 Icon=x-office-calendar
 Terminal=false
+Categories=Utility;
 X-GNOME-Autostart-enabled=true
-NoDisplay=true
