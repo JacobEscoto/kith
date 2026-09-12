@@ -1,9 +1,10 @@
 [Desktop Entry]
 Type=Application
+Version=1.0.0
 Name=Kith
 Comment=Kith (Desktop Calendar Widget)
 Exec=/usr/local/bin/kith
-Icon=x-office-calendar
+Icon=kith-calendar
 Terminal=false
 Categories=Utility;
 X-GNOME-Autostart-enabled=true
